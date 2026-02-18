@@ -20,6 +20,9 @@ locales
 nano
 file
 
+# https://github.com/cal-icor/cal-icor-hubs/issues/592
+parallel
+
 # for ops debugging
 net-tools
 htop
@@ -92,4 +95,3 @@ man
 # Unknown requirement. Perhaps remove this and the R magick package during a
 # maintenance period.
 libmagick++-dev
-
