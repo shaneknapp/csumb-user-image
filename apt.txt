@@ -19,7 +19,9 @@ tini
 locales
 nano
 file
-parallel https://github.com/cal-icor/cal-icor-hubs/issues/592
+
+# https://github.com/cal-icor/cal-icor-hubs/issues/592
+parallel
 
 # for ops debugging
 net-tools
