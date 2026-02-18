@@ -172,6 +172,11 @@ COPY environment.yml /tmp/environment.yml
 RUN mamba env update -q -p ${CONDA_DIR} -f /tmp/environment.yml
 RUN mamba clean -afy
 
+# install bioconda packages
+COPY bioconda.yaml /tmp/bioconda.yaml
+COPY bioconda-packages.sh /tmp/bioconda-packages.sh
+RUN /tmp/bioconda-packages.sh
+
 # installing chromium browser to enable webpdf conversion using nbconvert
 ENV PLAYWRIGHT_BROWSERS_PATH=${CONDA_DIR}
 RUN playwright install chromium
